@@ -1,5 +1,7 @@
 # DevOps BootCamp: Bash SED/AWK
 
+>Please use branch ```task_sedawk``` for this task that already exist in your forked repository after you has been started task
+
 ## Task
 
 
@@ -16,3 +18,5 @@ With given passwd file do following:
   e. Remove all lines from file containing word `daemon`
 
   f. Change shell for all users with **even** `UID` to `/bin/zsh`
+
+>`passwd_new` shouldn't has new line at the end of file
