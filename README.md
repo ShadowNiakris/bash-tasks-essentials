@@ -1,5 +1,7 @@
 # DevOps BootCamp: Bash Arrays
 
+>Please use branch ```task_array``` for this task that already exist in your forked repository after you has been started task
+
 ## Task
 
 Develop a script that takes number (count of needed folders up to 26) as an argument and create this folders in current directory with next naming convention `folder_<[a-z]>`.
