@@ -1,5 +1,7 @@
 # DevOps BootCamp: Bash Final Project
 
+>Please use branch ```task_final``` for this task that already exist in your forked repository after you has been started task
+
 ## Task
 
 ### Story
@@ -58,7 +60,7 @@ Examples:
 
 ### Version
 
-Add a flag to upload your script version:
+Add a flag to get your script version:
 
 ```bash
 user@laptop:~$ ./transfer.sh -v
