@@ -1,5 +1,7 @@
 # DevOps BootCamp: Bash Conditionals
 
+>Please use branch ```task_cond``` for this task that already exist in your forked repository after you has been started task
+
 ## Task 1
 An unsorted list is passed to the script. Write a program that will output the sum of even numbers
 
@@ -52,6 +54,6 @@ Numbers: 3 Symbols: 3 Letters: 9
 
 Numbers: 0 Symbols: 2 Letters: 5
 
-`./check_string.sh "Hello !+"`
+`./check_string.sh "Hello !!"`
 
 Numbers: 0 Symbols: 2 Letters: 5
