@@ -4,7 +4,7 @@ currentVersion="0.0.1"
 
 httpSingleUpload()
 {
-    response=$(curl -A curl --upload-file "$1" "https://transfer.sh/$2") || { echo "Failure!"; return 1;}
+    response=$(curl -A curl --upload-file "$1" "http://178.62.222.195:8080/$2") || { echo "Failure!"; return 1;}
 }
 
 printUploadResponse()
