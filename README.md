@@ -5,7 +5,7 @@
 ## Task
 
 ### Story
-Your college has developed a script to upload files from terminal to http://178.62.222.195:8080 Unfourtenetly, he has left the company. **The script isn't working now**. Your team asked for a new functionality to download uploaded files.
+Your college has developed a script to upload files from terminal to https://free.keep.sh Unfourtenetly, he has left the company. **The script isn't working now**. Your team asked for a new functionality to download uploaded files.
 
 Create a script which will upload and download file from transfer.sh. Add a description in the beggining of the script and comment the code. Please also follow the Bash Style Guide.
 
@@ -18,11 +18,11 @@ Upload should support uploading multiple files, as in example:
 ```bash
 user@laptop:~$ ./transfer.sh test.txt test2.txt
 Uploading test.txt
-####################################################### 100.0%
-Transfer File URL: http://178.62.222.195:8080/Mij6ca/test.txt
+...
+Transfer File URL: https://free.keep.sh/Mij6ca/test.txt
 Uploading test2.txt
-####################################################### 100.0%
-Transfer File URL: http://178.62.222.195:8080/Msfddf/test2.txt
+...
+Transfer File URL: https://free.keep.sh/Msfddf/test2.txt
 ```
 
 ### Download
@@ -38,7 +38,7 @@ test test.txt transfer.sh
 
 user@laptop:~$ ./transfer.sh -d ./test Mij6ca test.txt
 Downloading test.txt
-####################################################### 100.0%
+...
 Success!
 ```
 
