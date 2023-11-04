@@ -1,3 +1,7 @@
 #!/bin/bash
 
-# Put your code here
+#the string
+str=${1~~}
+
+
+echo $str | rev
