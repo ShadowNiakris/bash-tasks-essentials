@@ -1,9 +1,10 @@
 #!/bin/bash
-set -f
+set -o errexit
+set -o nounset
+set -o pipefail
 # Place your code here
-string="$1"
+string="${1}"
 
-echo $*
 numbers=0
 symbols=0
 letters=0
