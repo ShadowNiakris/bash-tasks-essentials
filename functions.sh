@@ -13,17 +13,25 @@ function pow ()
 #this funcrion returns the shortest passed argument
 function shortest () 
 {
+	# hash table declaration 
 	declare -A key_value_var
+	# order array declaration
+	declare -a order
 	
 	min=${#1}
+
 	for str in $* ; do
 		key_value_var["$str"]=${#str}
+		order+=( "$str" )
+		
 		if [[ ${#str} < $min ]]; then
 			min=${#str}
 		fi
+#		echo "min=${min}"
 	done
 
-	for key in ${!key_value_var[@]}; do
+	for key in ${order[@]}; do
+#		echo $key
 		if [[ ${key_value_var[$key]} == $min ]]; then
 			echo "$key"
 		fi
