@@ -8,7 +8,9 @@ function pow ()
 	b="${2}"
 
 #	echo "${a}^${b}" | bc 
-	echo | awk '{ print v1 ** v2 ; print res }' v1=$a v2=$b
+#	echo | awk '{ print v1 ** v2 ; print res }' v1=$a v2=$b
+	x=$(($a**$b))
+	echo $x
 }
 
 #this funcrion returns the shortest passed argument
