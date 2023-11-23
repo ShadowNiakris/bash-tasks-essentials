@@ -2,7 +2,7 @@
 
 echo -e "\n NumberJack \n"
 ch=0
-while [ $ch -ne 3 ]; do
+while [ "$ch" -ne 3 ]; do
   echo  "  
     PLAY : Hit 1 and enter.
     HELP : Hit 2 and enter.
@@ -31,7 +31,7 @@ while [ $ch -ne 3 ]; do
 
       if [ "${r[$((x))-1]}" -eq "$n" ];then
         echo "Great"
-        ((p=p+1))
+        (( p=p+1 ))
       else
         c=1
         break
@@ -43,7 +43,7 @@ while [ $ch -ne 3 ]; do
     break
   fi
   
-  if [ $c -eq 1 ];then
+  if [ "$c" -eq 1 ];then
     echo -e "\nGAME OVER\n"
     echo "You scored $p points"
   fi
