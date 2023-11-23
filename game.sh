@@ -19,7 +19,7 @@ while [ "$ch" -ne 3 ]; do
       echo "${r[*]} "
 
       for i in {1..10}; do
-        a[$i]=$i
+        a[${i}]=${i}
       done
 
       echo "${a[*]} "
