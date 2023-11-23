@@ -31,7 +31,7 @@ while [ "$ch" -ne 3 ]; do
 
       if [ "${r[$((x))-1]}" -eq "$n" ];then
         echo "Great"
-        (( p=(p+1) ))
+        (( p+=1 ))
       else
         c=1
         break
