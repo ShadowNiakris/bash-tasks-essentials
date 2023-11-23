@@ -3,7 +3,7 @@
 echo -e "\n NumberJack \n"
 ch=0
 while [ "$ch" -ne 3 ]; do
-  echo  "  
+  echo  "
     PLAY : Hit 1 and enter.
     HELP : Hit 2 and enter.
     EXIT : Hit 3 and enter.
@@ -17,12 +17,13 @@ while [ "$ch" -ne 3 ]; do
     while [ $c -eq 0 ]; do
       x=11; r=("$(shuf -i 0-9 -n 10)")
       echo "${r[*]} "
+
       for i in {1..10}; do
         a[$i]=$i
       done
-  
+
       echo "${a[*]} "
-    
+
       read -t 5 -r -p "Enter the index of your number : " x
       if [[ $? -gt 128 ]]; then
         c=1
