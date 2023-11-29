@@ -31,6 +31,7 @@ sed -i '/daemon/d' $file
 #Change shell for all users with even UID to /bin/zsh
 awk -F: '{if ($2 % 2 == 0) print $1":"$2":"$3":/bin/zsh"; else print $0}' $file > $tmpfile
 
+truncate -s -1 $tmpfile
 cp $tmpfile $file
 
 rm $tmpfile
