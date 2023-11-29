@@ -18,7 +18,9 @@ cp $originfile $file
 awk -F: '{if ($1 == "saned") print $1":"$2":"$3":"$4":"$5":"$6":/bin/bash"; else print $0}' $originfile > $file
 
 #change shell for user avahi /usr/sbin/nologin to /bin/bash using SED
-sed '/^avahi:/s/\/usr\/sbin\/nologin/\/bin\/bash/' $originfile > $file
+sed -i '/^avahi:/s/\/usr\/sbin\/nologin/\/bin\/bash/' $file 
+
+#cp $tmpfile $file
 
 #Save only 1-st 3-th 5-th 7-th columns of each string based on : delimiter
 awk -F: '{print $1":"$3":"$5":"$7}' $file > $tmpfile
